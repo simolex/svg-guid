@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a href="https://www.youtube.com/watch?v=Yzj8bBCq7Eg&t=13s">SVG, большой гайд </a>
+    <div class="box">
+      <svg class="svg svg--rect">
+        <rect class="rect" fill="#123456" x="100" y="70" rx="10" ry="20" />
+      </svg>
+      <svg class="svg">
+        <circle
+          r="100"
+          fill="lime"
+          cx="50%"
+          cy="50%"
+          stroke="aqua"
+          stroke-width="200"
+          stroke-dasharray="20 10 10 5"
+        />
+      </svg>
+      <svg class="svg">
+        <ellipse rx="50" ry="100" cx="50%" cy="50%" fill="magenta" />
+      </svg>
+      <svg class="svg">
+        <polygon
+          points="100,100 300,100 200,200"
+          fill="silver"
+          stroke="aqua"
+          stroke-width="20"
+          stroke-dasharray="20 10 10 5"
+          stroke-dashoffset="15"
+        />
+      </svg>
+      <svg class="svg">
+        <line x1="50" y1="50" x2="350" y2="250" stroke="brown" />
+      </svg>
+      <svg class="svg">
+        <polyline
+          points="50,50 50,150 150,150 150,50 250,50 350,250"
+          fill="none"
+          stroke="orange"
+          stroke-width="30"
+        />
+      </svg>
+      <svg
+        class="svg svg--text"
+        viewBox="0 0 402 304"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          id="path"
+          d="M60.8425 136.551C125.724 51.2359 168.717 86.3854 182.102 114.625L253.756 2L293.126 145.522L401 56.8173L228.559 302V155.488L95.4882 282.066L157.693 170.439L60.8425 217.282L1 255.156"
+        />
+        <text class="text">
+          <textPath href="#path">
+            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+            Рыбными если языком одна о? Напоивший, родного там!
+          </textPath>
+        </text>
+      </svg>
+    </div>
+    <img class="image1" src="img/apples.png" alt="apples" />
+    <img class="image2" src="img/apples.png" alt="apples" />
+
+    <svg
+      class="apple"
+      width="1"
+      height="1"
+      viewBox="0 0 1 1"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <clipPath id="apple" clipPathUnits="objectBoundingBox">
+        <path
+          class="apple-path"
+          d="M0.720103 0.25C0.657846 0.25 0.564422 0.281309 0.502204 0.312559C0.439928 0.281309 0.348313 0.25002 0.286056 0.25C0.128663 0.25 0.0672104 0.411133 0.0664126 0.5625C0.0653789 0.757754 0.190907 1 0.375946 1C0.438202 1 0.469331 0.96875 0.500459 0.96875C0.531588 0.96875 0.562716 1 0.624973 1C0.811743 1 0.937035 0.760156 0.934506 0.5625C0.937418 0.413281 0.875745 0.25 0.720103 0.25ZM0.688974 0.0625V0H0.626717C0.540725 0 0.471075 0.0699609 0.471075 0.15625V0.21875H0.533332C0.619324 0.21875 0.688974 0.148789 0.688974 0.0625Z"
+        />
+      </clipPath>
+    </svg>
+  </body>
+</html>

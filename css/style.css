@@ -1,0 +1,47 @@
+body {
+  padding: 50px;
+}
+.box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+
+.svg {
+  width: 400px;
+  height: 300px;
+  border: 1px solid #000;
+  margin-bottom: 50px;
+}
+
+.text {
+  font-size: 24px;
+  fill: #000;
+}
+.svg--text {
+  overflow: visible;
+  border: none;
+}
+
+.rect {
+  stroke: brown;
+  stroke-width: 10px;
+  fill: none;
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  width: 200px;
+  height: 150px;
+  transition: all 0.5s ease-in-out;
+}
+.svg--rect:hover .rect {
+  stroke-dashoffset: 00;
+}
+.image1 {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.image2 {
+  clip-path: url(#apple);
+  width: 300px;
+  height: 300px;
+}
